@@ -1,0 +1,114 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	min-width: 1248px !important;
+	overflow-y : scroll;
+	/*background-color: #ededed !important;*/
+}
+:global(.font_gray){
+	color: gray;
+}
+:global(.font_red){
+	color: red;
+}
+:global(.font_green){
+	color: green;
+}
+:global(.page_main){
+	margin: 0 auto;
+	width: 80%;
+	margin-top : 10px;
+	background-color: #ffffff;
+	min-height: 500px;
+	min-height: calc(100vh - 65px);
+	border-radius: 5px;
+}
+:global(.page_main_right){
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 10px;
+	background-color: #ededed;
+	min-height: 500px;
+	min-height: calc(100vh - 74px);
+	height: 100%;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+}
+:global(.page_no_auth){
+	padding-top: 80px;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	text-align: center;
+}
+:global(.page_no_auth_tips){
+	color : red;
+	font-size: 64px;
+	margin-bottom: 20px;
+}
+:global(.head_fixed_class){
+	background-color: rgba(255,255,255,0);
+	position:fixed;
+	top:0;
+	left: 0;
+	z-index: 20;
+	width: 100%;
+	min-width:1248px;
+	display: flex;
+	justify-content: flex-end;
+}
+:global(.head_fixed_class .ant-table-placeholder){
+	padding:0;
+	border : 0px;
+}
+:global(.head_fixed_class)>div{
+	margin-top: 0;
+	margin-right: 9px;
+	width: calc(100% - 218px);
+	padding-right: calc(17px - 100vw + 100%);
+}
+:global(.full_mode)>div{
+	width: calc(100% - 98px);
+} 
+:global(.head_fixed_class) table tr th{
+	color: #000000;
+	font-weight: bold;
+}
+:global(.head_fixed_class .ant-table-placeholder){
+    display: none;
+}
+:global(.page_bottom_podding){
+	padding-bottom: 40px;
+}
+:global(.page_loading){
+	padding:15px;
+}
+:global(.layout_percent){
+	position: fixed;
+	top:-10px;
+	left:0;
+	right: 0;
+	z-index: 50;
+}
+:global(.page_percent){
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -60px;
+	margin-top: -60px;
+	text-align: center;
+}
+:global(.page_percent) :global(.tips){
+	font-size: 18px;
+	margin-top: 10px;
+	color: #1890ff;
+}
